@@ -7,6 +7,7 @@ use std::{
         atomic::{AtomicUsize, Ordering},
         Arc,
     },
+    vec::Vec,
 };
 
 use crate::{consumer::Consumer, producer::Producer};

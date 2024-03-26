@@ -17,4 +17,8 @@ license = "MIT/Apache-2.0"
 default = []
 benchmark = []
 
+# [patch.'https://github.com/apache/teaclave-sgx-sdk.git']
+# sgx_tstd = { path = "../rust-sgx-sdk/sgx_tstd" }
+
 [dependencies]
+sgx_tstd = { path = "../../../sgx_tstd", features = ["backtrace"] }

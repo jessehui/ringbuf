@@ -116,6 +116,10 @@
 
 #![cfg_attr(feature = "benchmark", feature(test))]
 
+#![no_std]
+#[macro_use]
+extern crate sgx_tstd as std;
+
 #[cfg(feature = "benchmark")]
 extern crate test;
 
